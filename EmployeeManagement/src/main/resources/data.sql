@@ -1,0 +1,16 @@
+INSERT INTO employee (first_name, last_name, email, position) VALUES
+('Aarav', 'Sharma', 'aarav.sharma@company.com', 'Software Engineer'),
+('Priya', 'Mehta', 'priya.mehta@company.com', 'HR Manager'),
+('Rohan', 'Gupta', 'rohan.gupta@company.com', 'Frontend Developer'),
+('Ananya', 'Verma', 'ananya.verma@company.com', 'Backend Developer'),
+('Kabir', 'Singh', 'kabir.singh@company.com', 'Tech Lead'),
+('Sneha', 'Nair', 'sneha.nair@company.com', 'Quality Analyst'),
+('Vikram', 'Patel', 'vikram.patel@company.com', 'Project Manager'),
+('Isha', 'Rao', 'isha.rao@company.com', 'Business Analyst'),
+('Arjun', 'Das', 'arjun.das@company.com', 'DevOps Engineer'),
+('Neha', 'Kapoor', 'neha.kapoor@company.com', 'UI/UX Designer'),
+('Tanish', 'Jain', 'tanish.jain@company.com', 'Data Engineer'),
+('Ritika', 'Bansal', 'ritika.bansal@company.com', 'Product Manager'),
+('Harshit', 'Malhotra', 'harshit.malhotra@company.com', 'Cloud Architect'),
+('Kavya', 'Sinha', 'kavya.sinha@company.com', 'Software Intern'),
+('Rahul', 'Khanna', 'rahul.khanna@company.com', 'Database Administrator');
