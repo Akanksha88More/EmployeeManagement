@@ -25,6 +25,19 @@ function EmployeeTable() {
     navigate(`/edit/${id}`);
   }
 
+  function handleDelete(id) {
+    // Delete employee by ID
+    fetch(`http://localhost:8080/api/employee/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log("Employee deleted:", data);
+        // Update the local state to remove the deleted employee
+        setData((prevData) => prevData.filter((emp) => emp.id !== id));
+      })
+  }
+
   return (
     <div>
       <div className="text-center">
@@ -54,7 +67,7 @@ function EmployeeTable() {
               <td>{employee.position}</td>
               <td>
                 <button className="btn btn-primary" onClick={ () => handleEdit(employee.id)}>Edit</button>
-                <button className="btn btn-danger">Delete</button>
+                <button className="btn btn-danger" onClick={() => handleDelete(employee.id)}>Delete</button>
               </td>
             </tr>
           ))}

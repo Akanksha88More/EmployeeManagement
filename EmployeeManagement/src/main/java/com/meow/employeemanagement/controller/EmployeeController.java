@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173/")
 public class EmployeeController {
 
     private final EmployeeService employeeService;
@@ -37,7 +37,7 @@ public class EmployeeController {
         return employeeService.saveEmployee(employee);
     }
 
-    @PostMapping("/employee/update/{id}")
+    @PutMapping("/employee/{id}")
     public ResponseEntity<Employee> updateEmployee(@RequestBody Employee employee, @PathVariable long id) {
         return employeeService.updateEmployee(employee, id);
     }

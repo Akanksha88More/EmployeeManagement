@@ -36,7 +36,8 @@ public class EmployeeService {
         Optional<Employee> existingEmployee = employeeDao.findById(id);
         if (existingEmployee.isPresent()) {
             Employee empToUpdate = existingEmployee.get();
-            empToUpdate.setName(employee.getName());
+            empToUpdate.setFirstName(employee.getFirstName());
+            empToUpdate.setLastName(employee.getLastName());
             empToUpdate.setEmail(employee.getEmail());
             empToUpdate.setPosition(employee.getPosition());
             Employee updatedEmployee = employeeDao.save(empToUpdate);

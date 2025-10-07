@@ -29,7 +29,7 @@ function EditEmployee() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:8080/api/employees/${id}`, {
+    fetch(`http://localhost:8080/api/employee/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ function EditEmployee() {
   return (
     <div className="container mt-5">
       <div
-        className="card shadow p-4 bg-secondary"
+        className="card shadow p-4 bg-default"
         style={{ maxWidth: "500px", margin: "auto" }}
       >
         <h3 className="text-center mb-4 text-dark">Edit Employee Details</h3>
